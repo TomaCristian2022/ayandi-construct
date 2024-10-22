@@ -13,6 +13,9 @@ module.exports = {
       },
       colors: {
         primary: '#F55A36'
+      },
+      fontFamily: {
+        'golos': ['"Golos Text VF"' , 'sans-serif'],
       }
     },
   },

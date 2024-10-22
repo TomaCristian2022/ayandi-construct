@@ -1,0 +1,8 @@
+/* In src/assets/fonts/fonts.css */
+@font-face {
+    font-family: 'Golos Text VF';
+    src: url('../Golos-Text_VF.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

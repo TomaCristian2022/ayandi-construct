@@ -14,6 +14,7 @@ const HeroSection: React.FC = () => {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
+      adaptiveHeight: true,
       cssEase: "linear",
       fade: true // adding a fade effect between slides
     };
