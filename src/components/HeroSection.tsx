@@ -23,13 +23,13 @@ const HeroSection: React.FC = () => {
         <div className="home-hero slider">
           <Slider {...settings}>
             <div>
-              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" />
+              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" width="100%" height="calc(100vh - 100px)" />
             </div>
             <div>
-              <img src={FreeStationeryMockup} alt="Construction Site Two" className="object-cover" />
+              <img src={FreeStationeryMockup} alt="Construction Site Two" className="object-cover" width="100%" height="calc(100vh - 100px)" />
             </div>
             <div>
-              <img src={FreePosterSet} alt="Architect Planning" className="object-cover" />
+              <img src={FreePosterSet} alt="Architect Planning" className="object-cover" width="100%" height="calc(100vh - 100px)" />
             </div>
           </Slider>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
