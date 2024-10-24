@@ -8,7 +8,7 @@ import Proiect3 from '../assets/proiect3.jpg';
 
 const ProjectsSection: React.FC = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div id="proiecte" className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl leading-9 font-bold text-gray-900 sm:text-4xl sm:leading-10">

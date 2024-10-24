@@ -20,10 +20,10 @@ const HeroSection: React.FC = () => {
     };
 
     return (
-        <div className="home-hero slider">
+        <div id="home" className="home-hero slider">
           <Slider {...settings}>
             <div>
-              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" width="100%"/>
+              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" width="100%" />
             </div>
             <div>
               <img src={FreeStationeryMockup} alt="Construction Site Two" className="object-cover" width="100%"  />

@@ -1,9 +1,10 @@
 // src/components/AboutSection.tsx
 import React from 'react';
 import OpenedIsometric from '../assets/Opened_Isometric.webp';
+
 const AboutSection: React.FC = () => {
   return (
-    <div className="bg-white my-20 px-4 sm:px-6 lg:px-8 h-full">
+    <div id="despre" className="bg-white my-20 px-4 sm:px-6 lg:px-8 h-full">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl leading-9 font-bold text-gray-900 sm:text-4xl sm:leading-10">
