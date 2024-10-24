@@ -12,7 +12,8 @@ module.exports = {
         'logo': '3.5rem',
       },
       colors: {
-        primary: '#F55A36' 
+        primary: '#F55A36',
+        footer: '#20252F'
        
       },
       fontFamily: {
