@@ -3,6 +3,22 @@ import React from "react";
 import { FaFacebookF, FaTiktok, FaLinkedinIn, FaYoutube } from "react-icons/fa"; // Import specific icons
 
 const Footer: React.FC = () => {
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault(); // Prevent default anchor click behavior
+    const targetId = e.currentTarget.getAttribute('href')?.substring(1);
+    if(targetId){
+      const targetElement = document.getElementById(targetId); // Get the target element
+    if (targetElement) {
+      const topOffset = targetElement.offsetTop - 100; // Calculate the position, 100px above the element
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth' // Enable smooth scrolling
+      });
+    }
+  };  
+ };
+
   return (
     <footer className="bg-footer text-white">
       <div className="container mx-auto px-6 py-8">
@@ -11,22 +27,27 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold">Links</h3>
             <ul>
               <li>
-                <a href="#home" className="hover:underline">
+                <a onClick={handleScroll} href="#home" className="hover:underline">
                   Acasă
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:underline">
+                <a href="#despre"  onClick={handleScroll} className="hover:underline">
                   Despre Noi
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:underline">
+                <a href="#proiecte"  onClick={handleScroll} className="hover:underline">
                   Proiecte
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:underline">
+                <a href="#servicii"  onClick={handleScroll} className="hover:underline">
+                  Servicii
+                </a>
+              </li>
+              <li>
+                <a href="#contact"  onClick={handleScroll} className="hover:underline">
                   Contact
                 </a>
               </li>

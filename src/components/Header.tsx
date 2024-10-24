@@ -49,8 +49,9 @@ const Header: React.FC = () => {
         </div>
         <div className="hidden md:flex flex-1 items-center justify-around ">
             <a href="#home" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700" aria-current="page">Acasă</a>
-            <a href="#despre"  onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre</a>
+            <a href="#despre"  onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre Noi</a>
             <a href="#proiecte" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Proiecte</a>
+            <a href="#servicii" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Servicii</a>
             <a href="#contact" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
         </div>
         <div className="flex-1 flex justify-end md:hidden">

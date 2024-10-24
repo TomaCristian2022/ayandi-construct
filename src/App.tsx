@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import AboutSection from './components/About';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
+import ServicesSection from './components/ServicesSection';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <HeroSection />
+          <ServicesSection />
           <AboutSection />
           <ProjectsSection />
          <ContactSection />
