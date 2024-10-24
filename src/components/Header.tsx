@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                 <img src={logo} alt="Company Logo" className="h-12 w-auto" />
             </a>
         </div>
-        <div className="hidden md:flex flex-1 justify-center items-center">
+        <div className="hidden md:flex flex-1 items-center justify-around ">
             <a href="#home" className="text-gray-900 text-xl font-medium hover:text-gray-700" aria-current="page">Acasă</a>
             <a href="#despre" className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre</a>
             <a href="#proiecte" className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Proiecte</a>
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                 )}
             </button>
         </div>
-        <div className={`absolute md:hidden ${isMenuOpen ? 'flex' : 'hidden'} flex-col top-12 right-0 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} bg-white h-full w-2/5 transition-transform duration-300 ease-in-out`}>
+        <div className={`absolute md:hidden ${isMenuOpen ? 'flex' : 'hidden'} flex-col top-12 right-0 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} bg-white h-auto w-2/5 transition-transform duration-300 ease-in-out`}>
             <div className="flex flex-col items-start p-8 space-y-4">
                 <a href="#home" className="text-gray-900 text-xl font-medium hover:text-gray-700">Acasă</a>
                 <a href="#despre" className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a>
