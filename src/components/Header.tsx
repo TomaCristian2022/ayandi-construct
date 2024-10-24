@@ -24,36 +24,43 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-white' : 'bg-white bg-opacity-90 '}`}>
-      <nav className="max-w-screen-xl container mx-auto px-4 py-3 flex justify-evenly items-center">
-        <div>
-          <a href="#">
-            <img src={logo} alt="Company Logo" className="h-12 w-auto" />
-          </a>
-         
-        
+    <header className={`sticky top-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-white' : 'bg-white bg-opacity-90'}`}>
+    <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="flex-1 flex justify-start">
+            <a href="#">
+                <img src={logo} alt="Company Logo" className="h-12 w-auto" />
+            </a>
         </div>
-        <button onClick={toggleMenu} className="md:hidden text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-          {isMenuOpen ? (
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          )}
-        </button>
-        <div className={`md:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:space-x-4 absolute md:static top-12 right-0 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} bg-white h-full md:h-auto w-2/5 md:w-auto transition-transform duration-300 ease-in-out`}>
-          <div className="flex flex-col md:flex-row items-start md:items-center p-8 md:p-0 space-y-4 md:space-y-0 md:space-x-4 bg-white ">
+        <div className="hidden md:flex flex-1 justify-center items-center">
             <a href="#home" className="text-gray-900 text-xl font-medium hover:text-gray-700" aria-current="page">Acasă</a>
-            <a href="#despre" className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a>
-            <a href="#proiecte" className="text-gray-900 text-xl font-medium hover:text-gray-700">Proiecte</a>
+            <a href="#despre" className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre</a>
+            <a href="#proiecte" className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Proiecte</a>
             <a href="#contact" className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
-          </div>
         </div>
-      </nav>
-    </header>
+        <div className="flex-1 flex justify-end md:hidden">
+            <button onClick={toggleMenu} className="text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                {isMenuOpen ? (
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                ) : (
+                    <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                )}
+            </button>
+        </div>
+        <div className={`absolute md:hidden ${isMenuOpen ? 'flex' : 'hidden'} flex-col top-12 right-0 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} bg-white h-full w-2/5 transition-transform duration-300 ease-in-out`}>
+            <div className="flex flex-col items-start p-8 space-y-4">
+                <a href="#home" className="text-gray-900 text-xl font-medium hover:text-gray-700">Acasă</a>
+                <a href="#despre" className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a>
+                <a href="#proiecte" className="text-gray-900 text-xl font-medium hover:text-gray-700">Proiecte</a>
+                <a href="#contact" className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
   );
 };
 

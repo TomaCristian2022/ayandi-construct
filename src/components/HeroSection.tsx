@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       cssEase: "linear",
       fade: true // adding a fade effect between slides
     };
@@ -23,18 +23,18 @@ const HeroSection: React.FC = () => {
         <div className="home-hero slider">
           <Slider {...settings}>
             <div>
-              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" width="100%" height="calc(100vh - 100px)" />
+              <img src={HardHatMockup} alt="Construction Site One" className="object-cover" width="100%"/>
             </div>
             <div>
-              <img src={FreeStationeryMockup} alt="Construction Site Two" className="object-cover" width="100%" height="calc(100vh - 100px)" />
+              <img src={FreeStationeryMockup} alt="Construction Site Two" className="object-cover" width="100%"  />
             </div>
             <div>
-              <img src={FreePosterSet} alt="Architect Planning" className="object-cover" width="100%" height="calc(100vh - 100px)" />
+              <img src={FreePosterSet} alt="Architect Planning" className="object-cover" width="100%"  />
             </div>
           </Slider>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <button className="px-6 py-2 bg-primary hover:b-2 transition-colors rounded text-lg text-white">Află mai multe</button>
-          </div>
+          {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"> */}
+           {/* <button className="px-6 py-2 bg-primary hover:b-2 transition-colors rounded text-lg text-white">Află mai multe</button> */}
+          {/* </div> */}
         </div>
       );
     };
