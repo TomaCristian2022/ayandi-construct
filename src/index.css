@@ -18,6 +18,7 @@ html {
 body {
   overflow-x: hidden;
   margin: 0;
+  width: 100%;
   font-family: 'Golos Text VF', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
