@@ -72,6 +72,7 @@ const Header: React.FC = () => {
                 <a href="#home" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Acasă</a>
                 <a href="#despre" onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a>
                 <a href="#proiecte" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Proiecte</a>
+                <a href="#servicii" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Servicii</a>
                 <a href="#contact" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
             </div>
         </div>
