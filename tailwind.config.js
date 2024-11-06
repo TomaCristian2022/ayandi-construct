@@ -13,7 +13,11 @@ module.exports = {
       },
       colors: {
         primary: '#F55A36',
-        footer: '#20252F'
+        footer: '#20252F',
+        gray: '#42444C',
+        sgray: '#707176',
+        ssgray: '#9B9B9B',
+        sssgray: '#B9C2D3'
        
       },
       fontFamily: {

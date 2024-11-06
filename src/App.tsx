@@ -3,10 +3,11 @@ import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
-import AboutSection from './components/About';
-import ProjectsSection from './components/ProjectsSection';
+
 import ContactSection from './components/ContactSection';
 import ServicesSection from './components/ServicesSection';
+import RenovariSection from './components/RenovariSection';
+import Gallery from './components/Gallery';
 
 const App: React.FC = () => {
   return (
@@ -15,8 +16,9 @@ const App: React.FC = () => {
       <main>
         <HeroSection />
           <ServicesSection />
-          <AboutSection />
-          <ProjectsSection />
+          <RenovariSection />
+
+         <Gallery />
          <ContactSection />
       </main>
       <Footer />

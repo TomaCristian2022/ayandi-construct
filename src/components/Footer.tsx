@@ -26,19 +26,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold">Links</h3>
             <ul>
+             
               <li>
-                <a onClick={handleScroll} href="#home" className="hover:underline">
-                  Acasă
-                </a>
-              </li>
-              <li>
-                <a href="#despre"  onClick={handleScroll} className="hover:underline">
-                  Despre Noi
-                </a>
-              </li>
-              <li>
-                <a href="#proiecte"  onClick={handleScroll} className="hover:underline">
-                  Proiecte
+                <a href="#galerie"  onClick={handleScroll} className="hover:underline">
+                  Galerie
                 </a>
               </li>
               <li>

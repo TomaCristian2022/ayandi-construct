@@ -48,9 +48,8 @@ const Header: React.FC = () => {
             </a>
         </div>
         <div className="hidden md:flex flex-1 items-center justify-around ">
-            <a href="#home" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700" aria-current="page">Acasă</a>
-            <a href="#despre"  onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre Noi</a>
-            <a href="#proiecte" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Proiecte</a>
+            {/* <a href="#despre"  onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Despre Noi</a> */}
+            <a href="#galerie" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700 mx-4">Galerie</a>
             <a href="#servicii" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Servicii</a>
             <a href="#contact" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
         </div>
@@ -69,9 +68,8 @@ const Header: React.FC = () => {
         </div>
         <div className={`absolute md:hidden ${isMenuOpen ? 'flex' : 'hidden'} flex-col top-12 right-0 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} bg-white h-auto w-2/5 transition-transform duration-300 ease-in-out`}>
             <div className="flex flex-col items-start p-8 space-y-4">
-                <a href="#home" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Acasă</a>
-                <a href="#despre" onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a>
-                <a href="#proiecte" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Proiecte</a>
+                {/* <a href="#despre" onClick={handleScroll}  className="text-gray-900 text-xl font-medium hover:text-gray-700">Despre</a> */}
+                <a href="#galerie" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Galerie</a>
                 <a href="#servicii" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Servicii</a>
                 <a href="#contact" onClick={handleScroll} className="text-gray-900 text-xl font-medium hover:text-gray-700">Contact</a>
             </div>

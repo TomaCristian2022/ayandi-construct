@@ -14,9 +14,9 @@ interface ServiceCardProps {
                 <h3 className="font-bold text-xl mb-2 flex justify-center items-center" style={{height:"56px"}}>{title}</h3>
                 <p className="text-gray-700 text-base">{description}</p>
             </div>
-            <div className="text-center mt-4">
+            {/* <div className="text-center mt-4">
                 <a href="#contact" className="px-6 py-2 bg-primary hover:bg-gray-700 transition-colors rounded text-lg text-white">Cere o ofertă</a>
-            </div>
+            </div> */}
         </div>
     );
 };

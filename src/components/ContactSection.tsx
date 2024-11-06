@@ -6,12 +6,12 @@ const ContactSection: React.FC = () => {
     <div id="contact" className="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-md mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl leading-9 font-bold text-gray-900 sm:text-4xl sm:leading-10">
-            Contactați-ne
+          <h2 className="text-3xl leading-9 font-bold bg-black text-primary sm:text-4xl sm:leading-10">
+           Transformă-ți visul în ralitate cu Ayandi Construct!
           </h2>
           <p className="mt-3 max-w-md mx-auto text-xl text-gray-500 sm:mt-4">
-            Dacă aveți întrebări despre serviciile noastre sau aveți nevoie de asistență cu un proiect, vă rugăm să completați formularul de mai jos.
-          </p>
+            Contactează-n acum
+            </p>
         </div>
         <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
           <div>

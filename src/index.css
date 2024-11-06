@@ -10,7 +10,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* In your global CSS file or <style> tag */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
 html {
   scroll-behavior: smooth;
   overflow-x:hidden;
