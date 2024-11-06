@@ -4,7 +4,7 @@ const RenovariSection = () => {
   return (
     <section id="renovari" className="bg-gray-200 pb-3 sm:pb-3 lg:pb-32">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto sm:h-auto md:h-[600px]">
           {/* First major column */}
           <div style={{
               backgroundImage: `url('/assets/galerie/electtrician.webp')`,
